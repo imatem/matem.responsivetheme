@@ -20,7 +20,7 @@ setup(name='matem.responsivetheme',
       url='',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['collective'],
+      namespace_packages=['matem'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[

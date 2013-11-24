@@ -6,6 +6,6 @@
     meta_type="Filesystem Directory View" remove="True" />
     
 
- <skin-path name="Responsive Theme" remove="True" />
+ <skin-path name="IM Responsive Theme" remove="True" />
 
 </object>
