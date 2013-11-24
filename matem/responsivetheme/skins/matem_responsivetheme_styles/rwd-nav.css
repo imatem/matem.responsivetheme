@@ -43,11 +43,12 @@
    border-bottom-width: 1px;
 }
 
+/*     background-color: #2586D9; */
 button.navigation-button {
     width: 98%; 
     font-size: 1.5em; 
     border: 1px solid #062946;
-    background-color: #2586D9;
+    background-color: #205c90;
     color: #FFFFFF;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;

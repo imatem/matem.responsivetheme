@@ -16,13 +16,12 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: United States\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n""
 
-# ++resource++jsi18n.js
+# ./browser/javascripts/plone-rwd-nav.js
 msgid "Show Navigation"
 msgstr "Mostrar navegación"
 
-# ++resource++jsi18n.js
+# ./browser/javascripts/plone-rwd-nav.js
 msgid "Hide Navigation"
 msgstr "Esconder navegación"
 

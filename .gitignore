@@ -1,3 +1,4 @@
 matem.responsivetheme.egg-info/
 dist/
 *.pyc
+*.mo

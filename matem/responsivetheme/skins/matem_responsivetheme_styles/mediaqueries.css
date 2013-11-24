@@ -7,12 +7,12 @@
 /*  * iPhone in portrait mode * */
 
 /*  *  1625px and above huge screens * */
-@media screen and (min-width : 1625px)  {
+@media screen and (min-width : 1280px)  {
     body { width: 100%;}
     
     /* for readability making the width of the site only got to 100em */ 
     #visual-portal-wrapper {
-        width: 100em !important;
+        width: 80em !important;
         margin: 0px auto !important;
         display: block;
         float: none;
