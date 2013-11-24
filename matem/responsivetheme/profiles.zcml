@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="matem.responsivetheme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="IM Responsive Theme"
+      directory="profiles/default"
+      description='Extension profile for the "IM Responsive Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="IM Responsive Theme Uninstall"
+      directory="profiles/uninstall"
+      description='Uninstall profile for the "IM Responsive Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+      
+  <genericsetup:importStep
+      name="matem.responsivetheme.various"
+      title="IM Responsive Theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="matem.responsivetheme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+      
+</configure>

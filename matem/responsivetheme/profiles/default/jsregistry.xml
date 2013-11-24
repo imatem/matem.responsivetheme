@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration for the portal_javascripts tool.
+     -->
+
+<object name="portal_javascripts">
+    <javascript id="++resource++matem.responsivetheme.javascripts/respond.src.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="True" expression="" inline="False"/>
+   <javascript id="++resource++matem.responsivetheme.javascripts/viewportchange.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="False" expression="" inline="False"/>
+   <javascript id="++resource++matem.responsivetheme.javascripts/plone-rwd-nav.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="True" expression="" inline="False"/>
+   <javascript id="++resource++matem.responsivetheme.javascripts/ios-orientationchange-fix.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="True" expression="" inline="False"/>       
+      
+</object>
+

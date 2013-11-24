@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="IM Responsive Theme">
+
+ <object name="matem_responsivetheme_styles"
+    meta_type="Filesystem Directory View"
+    directory="matem.responsivetheme:skins/matem_responsivetheme_styles" />
+
+ <skin-path name="IM Responsive Theme" based-on="Sunburst Theme">
+  <layer name="matem_responsivetheme_styles"
+     insert-after="custom"/>
+ </skin-path>
+
+</object>
