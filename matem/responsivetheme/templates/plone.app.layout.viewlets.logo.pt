@@ -12,12 +12,6 @@
 
 </div>
 
-
-<!--     <a id="portal-logo-unam" href="http://www.unam.mx">
-        <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
-    </a>  
- -->
-
 <div tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;"> 
 
     <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="python: isHomePg">
