@@ -12,7 +12,7 @@
 
 </div>
 
-<div tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;"> 
+<div id="logo-unam" tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;"> 
 
     <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="python: isHomePg">
         <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
