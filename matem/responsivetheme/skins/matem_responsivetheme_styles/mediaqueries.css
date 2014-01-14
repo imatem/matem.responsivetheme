@@ -70,6 +70,18 @@
         margin:1em 0px;
         width: 95% !important;
         } 
+
+    /* move collage columns */    
+    #collage .block_1 {
+        margin:1em 0px;
+        width: 95% !important;
+        }
+
+    #collage .block_2 {
+        margin:2em 0px;
+        width: 95% !important;
+        }
+
         
     /* spread out the content */
     div#portal-column-content {
