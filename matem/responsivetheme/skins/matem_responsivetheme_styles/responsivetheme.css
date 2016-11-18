@@ -19,9 +19,9 @@ div#footer, #portal-colophon {
     margin-top: 2.3em;
 }
 
-  #logo  { 
-       margin-left: -95%;
-    }
+#logo {
+    margin-left: -95%;
+}
 
 button.navigation-button { 
     width: 98%; 
@@ -32,5 +32,16 @@ button.navigation-button {
     -moz-border-radius: 3px;
     border-radius: 3px;
     border:1px solid #999999;
-    }
-    
+}
+
+
+.subsection-fordecyt-fordecyt #viewlet-above-content-title {
+    background: url("http://www.matem.unam.mx/investigacion/fordecyt/imagenes/banner/image") no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    height: 215px;
+}
+
+.subsection-fordecyt-fordecyt #parent-fieldname-title {
+    display: None;
+}
