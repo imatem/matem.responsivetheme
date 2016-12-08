@@ -9,7 +9,7 @@
           tal:attributes="action string:${navigation_root_url}/@@search;
                           id string:${search_input_id}_form;">
 
-        <div class="LSBox">
+        <div style="float: right;" class="LSBox">
         <label class="hiddenStructure"
                tal:attributes="for search_input_id"
                i18n:translate="text_search">Search Site</label>
@@ -60,6 +60,7 @@
             Advanced Search&hellip;
         </a>
     </div>
+    <div class="visualClear"><!-- --></div>
 
     <div tal:condition="python: isHomePg" class="wrapper">
       <ul id="sb-slider" class="sb-slider">
@@ -94,7 +95,6 @@
     <script type="text/javascript">
 
       $(function() {
-        console.log('va!');
         var Page = (function() {
           var $navArrows = $( '#nav-arrows' ).hide(),
             $shadow = $( '#shadow' ).hide(),
@@ -105,7 +105,7 @@
               },
               orientation : 'v',
               cuboidsRandom : false,
-              cuboidsCount: 3,
+              cuboidsCount: 1,
               autoplay : true,
               speed : 600,
               interval: 3000,
