@@ -2,7 +2,7 @@
      tal:attributes="class string:cell width-3:4 position-0" id="logo"
      tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;"> 
 
-    <div style="padding-right:8em;" tal:condition="python: isHomePg">
+    <div style="padding-right:10em;" tal:condition="python: isHomePg">
         <a id="portal-logo" href="/">
             <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
         </a>
