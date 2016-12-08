@@ -79,4 +79,10 @@
 
       </ul>
     </div>
+
+    <script type="text/javascript">
+      console.log('se ejecutara')
+      $('#sb-slider').slicebox();
+    </script>
+
 </div>

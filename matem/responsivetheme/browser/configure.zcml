@@ -2,12 +2,12 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="plone">
-    
+
     <include package="plone.browserlayer" />
-      
+
     <browser:resourceDirectory
         name="matem.responsivetheme.javascripts"
         directory="javascripts"
         layer=".interfaces.IResponsiveTheme"
-        />  
+        />
 </configure>
