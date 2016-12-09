@@ -77,8 +77,12 @@
           <a href="http://finanzas.matem.unam.mx/" target="_blank">
             <img src="/infomatem/actividades/otras-actividades/carrusel/winter2016" alt="image2"/>
           </a>
-          <!-- <div class="sb-description">
-          </div> -->
+        </li>
+
+        <li>
+          <a href="http://prima2017.math.unam.mx/" target="_blank">
+            <img src="/infomatem/actividades/otras-actividades/carrusel/prima2016" alt="image3"/>
+          </a>
         </li>
 
       </ul>
