@@ -289,10 +289,27 @@
     }
 }
 /*  * iPhone * */
-@media screen and (orientation:landscape) and (max-device-width: 480px), screen and (orientation:portrait) and  (max-device-width: 320px) {
+
+@media screen and (orientation:portrait) and  (max-device-width: 320px){
+
+    #portal-searchbox {
+        margin: 100px 3% 15px 17% !important;
+        /*margin:0px !important;*/
+        padding-right: 0px !important;
+    }
+
+    #home-portal-logo{
+        padding-top: 0;
+        width: 90%;
+        /*margin-top: -40%;*/
+    }
+}
+
+@media screen and (orientation:landscape) and (max-device-width: 480px){
 /** it seems when changing the orientation on the iphone it loses things like globalnav being display block. Have to reset some css that should of been used from before **/
    body { display: inline !important; }
    /* global navigation needs to reconfigure itself to be vertical */
+
 
    #portal-globalnav { margin-left: 0px !important; }
 
@@ -302,7 +319,7 @@
         width: 100% !important;
         }
 
-     ul#portal-globalnav:before {
+    /* ul#portal-globalnav:before {
         display: block;
         margin-top: 20px;
         font-size: 2em;
@@ -356,11 +373,18 @@
         display: inline-block;
         margin-top: 25px;
         width: 45%;
-    }
+    }*/
 
 
     #portal-searchbox {
-        margin: 70px 17% 15px 17% !important;
+        margin: 70px 3% 15px 17% !important;
+        /*margin:0px !important;*/
+        padding-right: 0px !important;
+    }
+
+    div.wrapper{
+        margin: 0px -27% 15px 17% !important;
+        padding-right: 0px !important;
     }
 
     #portal-logo-unam {
@@ -371,7 +395,11 @@
 
     #home-portal-logo{
         padding-top: 0;
+        width: 100%;
+        margin-top: -40%;
     }
+
+
 } /*  * END iPhone * */
 
 
