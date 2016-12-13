@@ -65,7 +65,7 @@
     <div tal:condition="python: isHomePg" class="wrapper">
       <ul id="sb-slider" class="sb-slider">
 
-<!--         <li>
+        <li>
           <a href="http://www.matcuer.unam.mx/20years/" target="_blank">
           <img src="/infomatem/actividades/otras-actividades/carrusel/matcuer20/" alt="image1"/>
           </a>
@@ -76,7 +76,7 @@
             <img src="/infomatem/actividades/otras-actividades/carrusel/winter2016" alt="image2"/>
           </a>
         </li>
- -->
+
         <li>
           <a href="http://prima2017.math.unam.mx/" target="_blank">
             <img src="/infomatem/actividades/otras-actividades/carrusel/prima2016" alt="image3"/>
