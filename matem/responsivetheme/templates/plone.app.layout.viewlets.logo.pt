@@ -2,7 +2,7 @@
      tal:attributes="class string:cell width-3:4 position-0" id="logo"
      tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;"> 
 
-    <div style="padding-right:10em;" tal:condition="python: isHomePg">
+    <div id="home-portal-logo" tal:condition="python: isHomePg">
         <a id="portal-logo" href="/">
             <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
         </a>
@@ -21,30 +21,3 @@
     </div>
 
 </div>
-
-
-<!-- <div metal:define-macro="portal_logo"
-     tal:attributes="class string:cell width-1:4 position-0" id="logo"
-     tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-
-    <a id="portal-logo" href="/" tal:condition="python: isHomePg">
-        <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
-    </a>
-
-    <a id="portal-logo" href="/" tal:condition="not: isHomePg">
-        <img src="/infomatem/logomatemI.png" align="left" alt="Instituto de Matemáticas" />
-    </a>
-
-</div>
-
-<div id="logo-unam" tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-
-    <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="python: isHomePg">
-        <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
-    </a>
-
-    <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="not: isHomePg">
-        <img src="/infomatem/logounamI.png" align="right" alt="UNAM" />
-    </a>
-
-</div> -->
