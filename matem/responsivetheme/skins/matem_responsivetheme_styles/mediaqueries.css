@@ -28,7 +28,7 @@
         height: 135px;
     }
 
-    #logo.width-3\:4 {
+ /*   #logo.width-3\:4 {
         width: 45%;
         padding-top: 0;
     }
@@ -44,7 +44,7 @@
 
     #home-portal-logo{
         padding-top: 30px;
-    }
+    }*/
 }
 
 /*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */

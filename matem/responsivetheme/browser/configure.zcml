@@ -10,4 +10,13 @@
         directory="javascripts"
         layer=".interfaces.IResponsiveTheme"
         />
+
+    <browser:page
+        name="sliderbox"
+        for="Products.ATContentTypes.content.topic.ATTopic"
+        permission="zope.Public"
+        template="sliderbox.pt"
+        layer="Products.Collage.interfaces.ICollageBrowserLayer"
+    />
+
 </configure>

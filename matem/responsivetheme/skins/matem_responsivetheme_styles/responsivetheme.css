@@ -19,15 +19,9 @@ div#footer, #portal-colophon {
     margin-top: 2.3em;
 }
 
-#logo.width-3\:4 {
-    width: 66%;
-    padding-top: 30px;
+#logo {
+  margin-left: -95%;
 }
-
-#portal-logo-unam {
-    margin-right: 8em;
-}
-
 
 button.navigation-button { 
     width: 98%; 
