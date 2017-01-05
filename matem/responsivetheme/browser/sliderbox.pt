@@ -5,18 +5,18 @@
         <img src="/infomatem/actividades/otras-actividades/carrusel/matcuer20/" alt="image1"/>
       </a>
     </li>
-    <li>
+    <li style="display: none;">
       <a href="http://finanzas.matem.unam.mx/" target="_blank">
         <img src="/infomatem/actividades/otras-actividades/carrusel/winter2017" alt="image2"/>
       </a>
     </li>
-    <li>
+    <li style="display:none;">
       <a href="http://prima2017.math.unam.mx/" target="_blank">
         <img src="/infomatem/actividades/otras-actividades/carrusel/prima2017" alt="image3"/>
       </a>
     </li>
   </ul>
-
+</div>
     <script type="text/javascript">
       $('#sb-slider').slicebox();
     </script>
@@ -64,4 +64,3 @@
       });
     </script>
 
-</div>
