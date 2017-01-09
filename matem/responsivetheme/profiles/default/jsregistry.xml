@@ -14,7 +14,9 @@
        enabled="True" expression="" inline="False"/>
    <javascript id="++resource++matem.responsivetheme.javascripts/ios-orientationchange-fix.js"
        cacheable="True" compression="safe" cookable="False"
-       enabled="True" expression="" inline="False"/>       
-      
+       enabled="True" expression="" inline="False"/>
+   <javascript id="++resource++matem.responsivetheme.javascripts/jquery.slicebox.min.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="True" expression="" inline="False"/>
 </object>
 
