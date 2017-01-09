@@ -21,7 +21,7 @@
 } /*  *  END 1625px and above huge screens * */
 
 /*  *  800px and below * */
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 900px) {
     div#portal-searchbox {
         margin-right: 10% !important;
     }
@@ -29,10 +29,14 @@
     .subsection-fordecyt-fordecyt #viewlet-above-content-title {
         height: 135px;
     }
+
+    #logo-unam a img{
+        width: 70%;
+    }
 }
 
 /*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 600px) {
     /* reset the min width to be 320px */
     body { min-width: 320px !important;}
     #visual-portal-wrapper { width: 100% !important;}
