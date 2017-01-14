@@ -1,13 +1,8 @@
 <div class="wrapper">
   <ul id="sb-slider" class="sb-slider">
-    <li>
-      <a href="http://www.matcuer.unam.mx/20years/" target="_blank">
-        <img src="/infomatem/actividades/otras-actividades/carrusel/matcuer20/" alt="image1"/>
-      </a>
-    </li>
     <li style="display: none;">
-      <a href="http://finanzas.matem.unam.mx/" target="_blank">
-        <img src="/infomatem/actividades/otras-actividades/carrusel/winter2017" alt="image2"/>
+      <a href="http://circulosmatematicos.matem.unam.mx/" target="_blank">
+        <img src="/infomatem/actividades/otras-actividades/carrusel/circulos201701" alt="image2"/>
       </a>
     </li>
     <li style="display:none;">
