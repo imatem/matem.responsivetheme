@@ -3,11 +3,13 @@
     tal:define="topicContents view/getContents;">
   <ul id="sb-slider" class="sb-slider">
     <tal:block tal:repeat="item topicContents">
-      <li style="display: none;" tal:define="obj item/getObject">
-        <a target="_blank" tal:attributes="href python:obj.eventUrl;">
-          <img tal:attributes="src obj/image/absolute_url" alt="image"/>  
-        </a>
-      </li>
+      <tal:block tal:define="obj item/getObject">
+        <li tal:condition="python:view.hasImage(obj)" style="display: none;" >
+          <a target="_blank" tal:attributes="href python:obj.eventUrl;">
+            <img tal:attributes="src obj/image/absolute_url" alt="image"/>
+          </a>
+        </li>
+      </tal:block>
     </tal:block>
   </ul>
 </div>
