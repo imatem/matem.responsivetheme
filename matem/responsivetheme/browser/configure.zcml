@@ -16,6 +16,7 @@
         for="Products.ATContentTypes.content.topic.ATTopic"
         permission="zope.Public"
         template="sliderbox.pt"
+        class=".views.SliderBoxTopicView"
         layer="Products.Collage.interfaces.ICollageBrowserLayer"
     />
 

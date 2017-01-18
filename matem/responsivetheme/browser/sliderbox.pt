@@ -1,17 +1,19 @@
-<div class="wrapper">
+<tal:manager replace="structure provider:collage.ContentManager" />
+<div class="wrapper"
+    tal:define="topicContents view/getContents;">
   <ul id="sb-slider" class="sb-slider">
-    <li style="display: none;">
-      <a href="http://circulosmatematicos.matem.unam.mx/" target="_blank">
-        <img src="/infomatem/actividades/otras-actividades/carrusel/circulos201701" alt="image2"/>
-      </a>
-    </li>
-    <li style="display:none;">
-      <a href="http://prima2017.math.unam.mx/" target="_blank">
-        <img src="/infomatem/actividades/otras-actividades/carrusel/prima2017" alt="image3"/>
-      </a>
-    </li>
+    <tal:block tal:repeat="item topicContents">
+      <tal:block tal:define="obj item/getObject">
+        <li tal:condition="python:view.hasImage(obj)" style="display: none;" >
+          <a target="_blank" tal:attributes="href python:obj.eventUrl;">
+            <img tal:attributes="src obj/image/absolute_url" alt="image"/>
+          </a>
+        </li>
+      </tal:block>
+    </tal:block>
   </ul>
 </div>
+
     <script type="text/javascript">
       $('#sb-slider').slicebox();
     </script>
