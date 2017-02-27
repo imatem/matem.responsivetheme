@@ -1,4 +1,5 @@
 from Products.Collage.browser.views import BaseTopicView
+from Products.Five import BrowserView
 
 
 class SliderBoxTopicView(BaseTopicView):
@@ -10,3 +11,8 @@ class SliderBoxTopicView(BaseTopicView):
         if obj.getImage():
             return True
         return False
+
+class ContactInfoIM(BrowserView):
+
+    def changerecipient(self):
+        return ''
