@@ -1,0 +1,12 @@
+[default]
+title= Contact information IM
+
+[security]
+View=0:Anonymous
+
+[validators]
+validators=validate_site_feedback
+
+[actions]
+action.success=traverse_to:string:send_feedback_imsite
+action.failure=traverse_to:string:contact-info-im
