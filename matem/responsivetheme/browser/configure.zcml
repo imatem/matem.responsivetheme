@@ -22,8 +22,8 @@
 
     <browser:page
         for="*"
-        name="contact-info-im"
-        template="contact-info-im.pt"
+        name="contact-info-im2"
+        template="contact-info-im2.pt"
         permission="zope.Public"
         class=".views.ContactInfoIM"
     />
