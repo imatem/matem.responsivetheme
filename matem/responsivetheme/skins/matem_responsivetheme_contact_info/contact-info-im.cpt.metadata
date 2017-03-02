@@ -2,7 +2,7 @@
 title= Contact information IM
 
 [security]
-View=0:Manager
+View=0:Anonymous
 
 [validators]
 validators=validate_site_feedback
