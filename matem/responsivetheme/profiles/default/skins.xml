@@ -10,16 +10,16 @@
     meta_type="Filesystem Directory View"
     directory="matem.responsivetheme:skins/matem_responsivetheme_images" />
 
-  <object name="contact_info_folder"
+  <object name="matem_responsivetheme_contact_info"
     meta_type="Filesystem Directory View"
-    directory="matem.responsivetheme:skins/contact_info_folder" />
+    directory="matem.responsivetheme:skins/matem_responsivetheme_contact_info" />
 
  <skin-path name="IM Responsive Theme" based-on="Sunburst Theme">
   <layer name="matem_responsivetheme_styles"
      insert-after="custom"/>
   <layer name="matem_responsivetheme_images"
      insert-after="matem_responsivetheme_styles"/>
-  <layer name="contact_info_folder"
+  <layer name="matem_responsivetheme_contact_info"
     insert-after="matem_responsivetheme_images"/>
  </skin-path>
 
