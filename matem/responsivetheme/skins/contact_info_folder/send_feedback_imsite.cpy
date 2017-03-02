@@ -35,21 +35,21 @@ titleOptions = {
 }
 
 emailOptions = {
-    'option1': 'gabyartigas@im.unam.mx',
-    'option2': 'felipe@im.unam.mx',
-    'option3': 'paloma@matem.unam.mx',
-    'option4': 'sacademico@im.unam.mx',
+    'option1': 'option1@im.unam.mx',
+    'option2': 'option2@im.unam.mx',
+    'option3': 'option3@im.unam.mx',
+    'option4': 'option4@im.unam.mx',
     'without': 'foo@im.unam.mx',
 }
+
 
 subject = titleOptions.get(REQUEST.get('subject', 'without'), '')
 message = REQUEST.get('message', '')
 sender_from_address = REQUEST.get('sender_from_address', '')
 sender_fullname = REQUEST.get('sender_fullname', '')
-
-# send_to_address = portal.getProperty('email_from_address')
 send_to_address = emailOptions.get(REQUEST.get('subject', 'without'), '')
-envelope_from = portal.getProperty('email_from_address')
+envelope_from = 'contacto@matem.unam.mx'
+
 
 state.set(status=state_success)  # until proven otherwise
 
@@ -61,10 +61,10 @@ variables = {'sender_from_address' : sender_from_address,
              'url'                 : url,
              'subject'             : subject,
              'message'             : message
-             }
+            }
 
 try:
-    message = context.site_feedback_template(context, **variables)
+    message = context.site_feedback_template_im(context, **variables)
     message = message.encode(encoding)
     result = host.send(message, send_to_address, envelope_from,
                        subject=subject, charset=encoding)
