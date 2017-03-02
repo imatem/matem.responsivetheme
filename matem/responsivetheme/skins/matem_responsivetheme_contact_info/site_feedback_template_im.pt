@@ -7,7 +7,7 @@
      tal:define="portal context/@@plone_portal_state/portal;
                  charset portal/email_charset|string:utf-8;
                  dummy python:request.RESPONSE.setHeader('Content-Type', 'text/plain;;charset=%s' % charset);"
->Replay-To:<span tal:omit-tag="" tal:content="options/sender_from_address"/>
+>Reply-To:<span tal:omit-tag="" tal:content="options/sender_from_address"/>
 <span tal:omit-tag="" tal:content="options/message | nothing" />
 
 --
