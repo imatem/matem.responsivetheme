@@ -20,4 +20,12 @@
         layer="Products.Collage.interfaces.ICollageBrowserLayer"
     />
 
+    <browser:page
+        for="*"
+        name="contact-info-im2"
+        template="contact-info-im2.pt"
+        permission="zope.Public"
+        class=".views.ContactInfoIM"
+    />
+
 </configure>
