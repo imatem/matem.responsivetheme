@@ -19,7 +19,7 @@
         El Responsable del área ha sido contactado.
     </h1>
     <div class="documentDescription">
-      Se ha enviado un correo al responsable del área sobre sus preguntas y/o comentarios.
+      Se ha enviado un correo al responsable del área con sus preguntas o comentarios.
     </div>
 </metal:main>
 
