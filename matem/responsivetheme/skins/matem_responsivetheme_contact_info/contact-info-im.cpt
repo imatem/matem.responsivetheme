@@ -109,8 +109,8 @@
                      tal:define="error errors/subject|nothing"
                      tal:attributes="class python:test(error, 'field error', 'field')">
 
-                    <label for="subject" i18n:translate="label_subject">
-                        Subject
+                    <label for="subject">
+                        Asuntos relacionados con:
                     </label>
 
                     <span class="fieldRequired" title="Required"
@@ -131,7 +131,7 @@
                            tal:attributes="value request/subject|nothing"
                            /> -->
                       <select name="subject" id="subject">
-                        <option name="option1" value="option1">Difusión e informes</option>
+                        <option name="option1" value="option1">Difusión y Divulgación</option>
                         <option name="option2" value="option2">Biblioteca</option>
                         <option name="option3" value="option3">Festival Matemático</option>
                         <option name="option4" value="option4">Asuntos Académicos</option>
@@ -181,8 +181,8 @@
             <input type="hidden" name="form.submitted" value="1" />
 
             </form>
-            <div style="padding: 20px; color: white; background-color: #FFA92A;margin-bottom: 15px;">
-              Todo asunto relacionado con posgrado dirigirse a: <a href="http://www.posgrado.unam.mx/"> http://www.posgrado.unam.mx/</a>
+            <div style="padding: 20px; font-weight: bold; margin-bottom: 15px;">
+              Todos los asuntos relacionados con estudios de posgrado dirigirse a: <a href="http://www.posgrado.unam.mx/"> http://www.posgrado.unam.mx/</a>
             </div>
         </div>
     </div>
