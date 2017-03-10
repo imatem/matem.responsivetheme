@@ -185,17 +185,7 @@
               Todos los asuntos relacionados con estudios de posgrado dirigirse a: <a href="http://www.posgrado.unam.mx/"> http://www.posgrado.unam.mx/</a>
             </div>
 
-            <h2 align="center">Instituto de Matemáticas, UNAM</h2>
-            <p align="center"><strong>C.U.<br /></strong></p>
-            <div align="center">Área de la Investigación Científica<br />Circuito Exterior, Ciudad Universitaria<br />Coyoacán, 04510. México, D. F.<br />Teléfonos (+52) (55) 5622 4520 y 21 <br />Fax (+52) (55) 5616 0348</div>
-            <br/>
-            <div align="center"><a class="external-link" href="http://www.matcuer.unam.mx"><strong>Unidad Cuernavaca</strong></a> <br /><br />Av. Universidad s/n. Col. Lomas de Chamilpa <br />Código Postal 62210, Cuernavaca, Morelos.<br />Apartado Postal 273. Admon. de correos #3 <br />C.P. 62251 Cuernavaca, Morelos, México<br />Teléfonos (+52)(777) 329 1721 y (+52)(55) 5622 7721 <br />Fax (+52)(777) 329 1680 y (+52)(55) 5622 7680</div>
-            <br/>
-            <p align="center"><strong><a class="external-link" href="http://paginas.matem.unam.mx/juriquilla/" target="_self" title="">Unidad Juriquilla</a><br /></strong></p>
-            <div align="center">San Isidro 303 <br /> Col. Villas del Mesón, Juriquilla <br /> C.P. 76230 Querétaro, México<br /> Teléfono +(52) (442) 1990170</div>
-            <br/>
-            <p align="center"><strong><a class="external-link" href="http://paginas.matem.unam.mx/oaxaca/" target="_self" title="">Unidad Oaxaca</a><br /></strong></p>
-            <div align="center">León 2, altos, <br /> Col. Centro <br /> C.P. 68000, Oaxaca, México<br /> Teléfono +(52) (951) 5160541 ext. 540​</div>
+            <h2><a href="http://www.matem.unam.mx/acerca-de/contacto">Direcciones físicas</a></h2>
         </div>
     </div>
 </metal:main>
