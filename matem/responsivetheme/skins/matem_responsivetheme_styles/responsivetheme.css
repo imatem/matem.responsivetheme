@@ -45,3 +45,7 @@ button.navigation-button {
 .subsection-fordecyt-fordecyt #parent-fieldname-title {
     display: None;
 }
+
+ul#sb-slider {
+    margin: 10px auto;
+}
