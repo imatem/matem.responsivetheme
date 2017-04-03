@@ -1,0 +1,42 @@
+.rotatedlist{
+    height: 130px;
+    overflow-y: hidden;
+  }
+
+  #content ul.ulrotated {
+    list-style-type: none;
+  }
+
+  #content li.lirotated{
+    height: 60px;
+  }
+
+
+a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
+    color: white;
+}
+
+#content a.cuheader-color:visited, #content a.cuerheader-color:visited, #content a.oaxheader-color:visited, #content a.jurheader-color:visited{
+    color:white;
+}
+
+#content .cuheader-color a:hover, #content .cuerheader-color a:hover, #content .oaxheader-color a:hover, #content .jurheader-color a:hover{
+    color: white !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+    li.lirotated{
+        font-size: smaller;
+    }
+
+    #content li.lirotated{
+        height: 70px;
+    }
+
+    .rotatedlist{
+        height: 150px;
+  }
+
+}
+
