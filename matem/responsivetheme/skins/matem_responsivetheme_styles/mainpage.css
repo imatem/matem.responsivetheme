@@ -13,7 +13,7 @@
 
 
 a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
-    color: white;
+    color: white !important;
 }
 
 #content a.cuheader-color:visited, #content a.cuerheader-color:visited, #content a.oaxheader-color:visited, #content a.jurheader-color:visited{
