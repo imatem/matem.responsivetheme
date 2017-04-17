@@ -24,6 +24,9 @@ a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
     color: white !important;
 }
 
+.linkwithborderwhite{
+  border-bottom-color:white !important;
+}
 
 @media screen and (max-width: 1000px) {
     li.lirotated{
