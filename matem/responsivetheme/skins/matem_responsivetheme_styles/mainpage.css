@@ -43,3 +43,35 @@ a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
 
 }
 
+#content div.block_1 div.collage_type_link a:link,
+#content div.block_1 div.collage_type_link a:visited,
+#content div.block_1 div.collage_type_link a:hover,
+#content div.block_1 div.collage_type_link a:active{
+  color: white !important;
+}
+
+div.block_1 div.collage_type_link h2{
+    font-size: 1.25em;
+    font-family: Arial, FreeSans, sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: left;
+    padding-left: 15px;
+}
+
+div.block_1 div.collage_item_5 {
+    background-color: #4387fd;
+}
+div.block_1 div.collage_item_6 {
+    background-color: #75ad0a;
+}
+div.block_1 div.collage_item_7 {
+    background-color: #944ADF;
+}
+div.block_1 div.collage_item_8 {
+    background-color: #F17C06;
+}
+
+#content .cuheader-color {
+    background-color: #9C1414;
+}
