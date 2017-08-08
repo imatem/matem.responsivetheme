@@ -3,6 +3,11 @@
     overflow-y: hidden;
   }
 
+.rotatedlistimages{
+    height: 420px;
+    overflow-y: hidden;
+  }
+
   #content ul.ulrotated {
     list-style-type: none;
   }
@@ -10,6 +15,12 @@
   #content li.lirotated{
     height: 60px;
   }
+
+  #content li.lirotatedimage{
+    height: 200px;
+    list-style-type: none;
+  }
+
 
 
 a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
@@ -39,6 +50,18 @@ a.cuheader-color, a.cuerheader-color, a.oaxheader-color, a.jurheader-color{
 
     .rotatedlist{
         height: 150px;
+  }
+
+  li.lirotatedimage{
+        font-size: smaller;
+    }
+
+  #content li.lirotatedimage{
+        height: 220px;
+    }
+
+    .rotatedlistimages{
+        height: 460px;
   }
 
 }
