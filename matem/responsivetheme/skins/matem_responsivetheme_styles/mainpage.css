@@ -102,6 +102,12 @@ div.block_1 div.collage_item_7 {
 /*!-- Para la página de votaciones*/
 
 
+@media screen and (max-width : 900px) {
+  .track-progress {
+    font-size: 10px;
+  }
+}
+
 .track-progress[data-steps="3"] li { width: 25%; }
 .track-progress[data-steps="4"] li { width: 23%; }
 .track-progress[data-steps="5"] li { width: 20%; }
@@ -119,23 +125,22 @@ div.block_1 div.collage_item_7 {
   position: relative;
   margin: 0;
   padding: 0;
-
   text-align: center;
   line-height: 30px !important;
-  background-color: #f0f0f0;
+  background-color: rgb(197,203,233);
 }
 
 .track-progress li > span {
   display: block;
-
-  color: #999;
+  color: #757575;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .track-progress li.done > span {
-  color: #666;
-  background-color: #ccc;
+  color: white;
+  background-color: #3F51B5;
+  border-color: #3F51B5;
 }
 
 .track-progress li > span:after,
@@ -148,7 +153,7 @@ div.block_1 div.collage_item_7 {
   top: 0;
   left: 0;
   border: solid transparent;
-  border-left-color: #f0f0f0;
+  border-left-color: rgb(197,203,233);
   border-width: 15px;
   margin-left: -8px;
 }
@@ -165,7 +170,7 @@ div.block_1 div.collage_item_7 {
 }
 
 .track-progress li.done + li > span:before {
-  border-left-color: #ccc;
+  border-left-color: #3F51B5;
 }
 
 .track-progress li:first-child > span:after,
@@ -178,11 +183,9 @@ div.block_1 div.collage_item_7 {
   display: block;
   height: 0;
   width: 0;
-
   position: absolute;
   top: 0;
   left: 0;
-
   border: solid transparent;
   border-left-color: white;
   border-width: 15px;
@@ -197,7 +200,21 @@ div.block_1 div.collage_item_7 {
   border-bottom-color: white;
 }
 
+.cadidatos-wrapper{
+  display: table;
+  border-spacing: 20px 0;
+}
 
-.candidatos {
+.candidato{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table-row;
+}
 
+.candidato li {
+  display: table-cell !important;
+  vertical-align: center;
+  padding: 10px;
+  border-radius: 5px;
 }
