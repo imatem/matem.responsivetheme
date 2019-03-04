@@ -33,8 +33,8 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.slideshow-header-container {
+  /*max-width: 1000px;*/
   position: relative;
   margin: auto;
 }
@@ -103,23 +103,23 @@ img {vertical-align: middle;}
 }
 </style>
 
-<div class="slideshow-container">
+<div class="slideshow-header-container">
 
 <div class="mySlides fade">
   <!-- <div class="numbertext">1 / 3</div> -->
-  <img src="http://localhost:8080/infomatem/actividades/baner/taller-profesores-5o-ciclo-de-circulos-matematicos/image" style="width:100%">
+  <img src="http://localhost:8080/infomatem/actividades/headers/prueba-cabeza-pag-IM.jpg" style="width:100%">
   <!-- <div class="text">Caption Text</div> -->
 </div>
 
 <div class="mySlides fade">
   <!-- <div class="numbertext">2 / 3</div> -->
-  <img src="http://localhost:8080/infomatem/actividades/baner/taller-profesores-5o-ciclo-de-circulos-matematicos/image" style="width:100%">
+  <img src="http://localhost:8080/infomatem/actividades/headers/Cabezal_Pagina.jpg" style="width:100%">
   <!-- <div class="text">Caption Two</div> -->
 </div>
 
 <div class="mySlides fade">
   <!-- <div class="numbertext">3 / 3</div> -->
-  <img src="http://localhost:8080/infomatem/actividades/baner/taller-profesores-5o-ciclo-de-circulos-matematicos/image" style="width:100%">
+  <img src="http://localhost:8080/infomatem/actividades/headers/cabeza%20infomatem.jpg" style="width:100%">
   <!-- <div class="text">Caption Three</div> -->
 </div>
 
@@ -150,6 +150,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 </script>
