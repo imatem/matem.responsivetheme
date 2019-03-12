@@ -1,29 +1,3 @@
-<!-- <div metal:define-macro="portal_logo"
-     tal:attributes="class string:cell width-1:4 position-0" id="logo"
-     tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-
-    <a id="portal-logo" href="/" tal:condition="python: isHomePg">
-        <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
-    </a>
-
-    <a id="portal-logo" href="/" tal:condition="not: isHomePg">
-        <img src="/infomatem/logomatemI.png" align="left" alt="Instituto de Matemáticas" />
-    </a>
-
-</div>
-
-<div id="logo-unam" tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-
-    <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="python: isHomePg">
-        <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
-    </a>
-
-    <a id="portal-logo-unam" href="http://www.unam.mx" tal:condition="not: isHomePg">
-        <img src="/infomatem/logounamI.png" align="right" alt="UNAM" />
-    </a>
-
-</div> -->
-
 <tal:block tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
 
   <tal:block tal:condition="not: isHomePg">
@@ -47,7 +21,7 @@
   </tal:block>
 
 
-  <tal:block tal:condition="isHomePg">
+  <tal:block tal:condition="isHomePg" tal:define="headers context/@@sliderheader/getHeaders">
 
     <style>
     * {box-sizing: border-box;}
@@ -126,34 +100,42 @@
     }
     </style>
 
-    <div class="slideshow-header-container">
+    <div class="slideshow-header-container" >
 
-    <div class="mySlides fade">
-      <!-- <div class="numbertext">1 / 3</div> -->
-      <img src="http://localhost:8080/infomatem/actividades/headers/prueba-cabeza-pag-IM.jpg" style="width:100%">
-      <!-- <div class="text">Caption Text</div> -->
-    </div>
+      <tal:block tal:condition="not: headers">
 
-    <div class="mySlides fade">
-      <!-- <div class="numbertext">2 / 3</div> -->
-      <img src="http://localhost:8080/infomatem/actividades/headers/Cabezal_Pagina.jpg" style="width:100%">
-      <!-- <div class="text">Caption Two</div> -->
-    </div>
+        <div tal:attributes="class string:cell width-1:4 position-0" id="logo"
+             tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
+          <a id="portal-logo" href="/">
+            <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
+          </a>
+        <br/>
+        </div>
 
-    <div class="mySlides fade">
-      <!-- <div class="numbertext">3 / 3</div> -->
-      <img src="http://localhost:8080/infomatem/actividades/headers/cabeza%20infomatem.jpg" style="width:100%">
-      <!-- <div class="text">Caption Three</div> -->
-    </div>
+        <div id="logo-unam">
+          <a id="portal-logo-unam" href="http://www.unam.mx">
+            <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
+          </a>
+        </div>
+      </tal:block><!-- end not headers -->
+
+      <tal:block tal:repeat="header headers">
+        <div class="mySlides fade">
+          <a tal:attributes="src header/url">
+            <img tal:attributes="src header/urlimage" style="width:100%"/>
+          </a>
+        </div>
+      </tal:block>
 
     </div>
     <br>
 
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <tal:block tal:repeat="x python:range(1, len(headers)+1)">
+        <span class="dot" tal:attributes="onclick string: currentSlide(${x})"></span>
+      </tal:block>
     </div>
+
     <br/><br/>
 
     <script>
