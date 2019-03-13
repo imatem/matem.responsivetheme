@@ -24,18 +24,18 @@ class HeaderSliderTopicView(BrowserView):
     def getHeaders(self):
         headers = []
         brains = api.content.find(
-            portal_type='Congreso',
+            portal_type='SliderContent',
             path='/infomatem/actividades/headers/',
-            review_state='frontpage_published',
-            sort_on="start"
+            review_state='front-page',
+            sort_on='start'
         )
         for b in brains:
             obj = b.getObject()
-            image = obj.getImage()
+            image = obj.image
             if image:
                 data = {}
-                data['url'] = obj.eventUrl
-                data['urlimage'] = image.absolute_url()
+                data['url'] = obj.urlevent
+                data['urlimage'] = obj.absolute_url() + '/@@images/image'
                 headers.append(data)
         return headers
 
