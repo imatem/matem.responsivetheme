@@ -121,7 +121,7 @@
 
       <tal:block tal:repeat="header headers">
         <div class="mySlides fade">
-          <a tal:attributes="src header/url">
+          <a tal:attributes="href header/url">
             <img tal:attributes="src header/urlimage" style="width:100%"/>
           </a>
         </div>
