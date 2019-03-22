@@ -128,15 +128,12 @@
       </tal:block>
 
     </div>
-    <br>
 
     <div style="text-align:center">
       <tal:block tal:repeat="x python:range(1, len(headers)+1)">
         <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
       </tal:block>
     </div>
-
-    <br/><br/>
 
     <script>
     var slideIndex = 0;
