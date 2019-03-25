@@ -98,6 +98,14 @@
     @media only screen and (max-width: 300px) {
       .text {font-size: 11px}
     }
+
+    
+    .logos-home{
+        padding: 10px;
+    }
+    .logo-imunam{
+        float: right;
+    }
     </style>
 
     <div class="slideshow-header-container" >
@@ -120,13 +128,13 @@
       </tal:block><!-- end not headers -->
 
       <tal:block tal:condition="headers">
-        <div>
+        <div class="logos-home">
           <a style="padding-right: 10px;" href="http://www.unam.mx">
-              <img src="/infomatem/logounamI.png" alt="UNAM" />
+              <img src="/infomatem/logounamP.png" alt="UNAM" />
           </a>
 
           <a href="/">
-            <img src="/infomatem/logomatemI.png" alt="Instituto de Matemáticas" />
+            <img class="logo-imunam" src="/infomatem/logomatemP.png" alt="Instituto de Matemáticas" />
           </a>
         </div>
       </tal:block>
@@ -139,7 +147,7 @@
         </div>
       </tal:block>
 
-      <div style="left: 20%;bottom:2%; position: absolute;">
+      <div style="left: 5%;bottom:2%; position: absolute;">
         <tal:block tal:repeat="x python:range(1, len(headers)+1)">
           <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
         </tal:block>
