@@ -8,14 +8,14 @@
 
 
       <a id="portal-logo" href="/">
-            <img src="/infomatem/logomatemI.png" align="left" alt="Instituto de Matemáticas" />
+            <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
       </a>
     <br/>
     </div>
 
       <div id="logo-unam">
         <a id="portal-logo-unam" href="http://www.unam.mx">
-            <img src="/infomatem/logounamI.png" align="right" alt="UNAM" />
+            <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
         </a>
       </div>
   </tal:block>
@@ -102,9 +102,6 @@
     
     .logos-home{
         padding: 10px;
-    }
-    .logo-imunam{
-        float: right;
     }
     </style>
 
