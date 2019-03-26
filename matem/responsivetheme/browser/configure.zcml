@@ -36,4 +36,12 @@
         class=".restadapter.PFGrestView"
     />
 
+    <!-- allowed_interface=".interfaces.IPlone" -->
+    <browser:page
+      for="*"
+      name="sliderheader"
+      class=".views.HeaderSliderTopicView"
+      permission="zope.Public"
+      />
+
 </configure>

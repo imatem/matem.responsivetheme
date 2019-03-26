@@ -6,6 +6,8 @@ from smtplib import SMTPRecipientsRefused
 from Products.CMFCore.interfaces import ISiteRoot
 from zope.component import getUtility
 
+from plone import api
+
 
 class SliderBoxTopicView(BaseTopicView):
 
@@ -16,6 +18,28 @@ class SliderBoxTopicView(BaseTopicView):
         if obj.getImage():
             return True
         return False
+
+class HeaderSliderTopicView(BrowserView):
+
+    def getHeaders(self):
+        headers = []
+        brains = api.content.find(
+            portal_type='SliderContent',
+            path='/infomatem/actividades/headers/',
+            review_state='front-page',
+            sort_on='start'
+        )
+        for b in brains:
+            obj = b.getObject()
+            image = obj.image
+            if image:
+                data = {}
+                data['url'] = obj.urlevent
+                data['urlimage'] = obj.absolute_url() + '/@@images/image'
+                headers.append(data)
+        return headers
+
+
 
 class ContactInfoIM(BrowserView):
 
