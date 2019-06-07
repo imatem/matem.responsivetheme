@@ -30,9 +30,6 @@
         height: 135px;
     }
 
-    #logo-unam a img{
-        width: 70%;
-    }
 }
 
 /*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */
@@ -47,29 +44,7 @@
         width: 40%;
         }
 
-   #portal-logo {
-       margin-left: 30px;
-       display: inline-block;
-       clear: both;
-       margin: 0px;
-       width: 50%;
-       }
 
-    div#logo-unam {
-        top: 3px !important;
-        display: inline-block;
-        width: 40%;
-        float: right;
-        position: absolute;
-        margin-left: 10%;
-        }
-
-    #portal-logo-unam {
-       margin-left: 30px;
-       display: inline-block;
-       margin: 0px;
-       width: 35%;
-       }
 
     /* make width 100% instead of the stock 97.75% */
     div.width-full {
@@ -245,7 +220,7 @@
     #portal-columns {
        font-size: 1.7em;
        }
-     #portal-logo a#logo-site { padding-top: 2%;}
+
 
 }
 
@@ -258,7 +233,6 @@
     #portal-columns {
        font-size: 1.7em;
        }
-    #portal-logo a#logo-site { padding-top: 2%;}
 
 } /*  * END Pad in landscape mode * */
 
@@ -270,21 +244,12 @@
    body { display: inline !important; }
    /* global navigation needs to reconfigure itself to be vertical */
 
-     #portal-logo {
-        display: inline-block;
-        }
 
      div#logo {
         position: absolute;
         top: 15px !important;
         display: inline-block;
         }
-   #portal-logo {
-       clear: both !important;
-       margin: 0;
-       display: inline-block;
-       width: 80% !important;
-       }
 
 
    #portal-globalnav { margin-left: 0px !important; }

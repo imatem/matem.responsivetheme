@@ -7,15 +7,15 @@
          tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
 
 
-      <a id="portal-logo" href="/">
-            <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
+      <a id="-----" href="/">
+            <img src="-----" align="left" alt="Instituto de Matemáticas" />
       </a>
     <br/>
     </div>
 
-      <div id="logo-unam">
-        <a id="portal-logo-unam" href="http://www.unam.mx">
-            <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
+      <div id="-----">
+        <a id="-----" href="http://www.unam.mx">
+            <img src="-----" align="right" alt="UNAM" />
         </a>
       </div>
   </tal:block>
@@ -26,15 +26,9 @@
     <style>
     * {box-sizing: border-box;}
     body {font-family: Verdana, sans-serif;}
-    .mySlides {display: none;}
+
     img {vertical-align: middle;}
 
-    /* Slideshow container */
-    .slideshow-header-container {
-      /*max-width: 1000px;*/
-      position: relative;
-      margin: auto;
-    }
 
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
@@ -61,83 +55,51 @@
       top: 0;
     }
 
-    /* The dots/bullets/indicators */
-    .dot {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-
     .active {
       background-color: #717171;
     }
 
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
 
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
       .text {font-size: 11px}
     }
 
-    
-    .logos-home{
-        padding: 10px;
-    }
     </style>
 
-    <div class="slideshow-header-container" >
+    <div class="-----" >
 
       <tal:block tal:condition="not: headers">
 
         <div tal:attributes="class string:cell width-1:4 position-0" id="logo"
              tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-          <a id="portal-logo" href="/">
-            <img src="/infomatem/logomatemP.png" align="left" alt="Instituto de Matemáticas" />
+          <a id="-----" href="/">
+            <img src="-----" align="left" alt="Instituto de Matemáticas" />
           </a>
         <br/>
         </div>
 
-        <div id="logo-unam">
-          <a id="portal-logo-unam" href="http://www.unam.mx">
-            <img src="/infomatem/logounamP.png" align="right" alt="UNAM" />
+        <div id="-----">
+          <a id="-----" href="http://www.unam.mx">
+            <img src="-----" align="right" alt="UNAM" />
           </a>
         </div>
       </tal:block><!-- end not headers -->
 
       <tal:block tal:condition="headers">
-        <div class="logos-home">
+        <div class="-----">
           <a style="padding-right: 10px;" href="http://www.unam.mx">
-              <img src="/infomatem/logounamP.png" alt="UNAM" />
+              <img src="-----" alt="UNAM" />
           </a>
 
           <a href="/">
-            <img class="logo-imunam" src="/infomatem/logomatemP.png" alt="Instituto de Matemáticas" />
+            <img class="-----" src="-----" alt="Instituto de Matemáticas" />
           </a>
         </div>
       </tal:block>
 
       <tal:block tal:repeat="header headers">
-        <div class="mySlides fade">
+        <div class="----- -----">
           <a tal:attributes="href header/url">
             <img tal:attributes="src header/urlimage" style="width:100%"/>
           </a>
@@ -146,59 +108,12 @@
 
       <div style="left: 5%;bottom:2%; position: absolute;">
         <tal:block tal:repeat="x python:range(1, len(headers)+1)">
-          <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
+          <span class="-----" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
         </tal:block>
       </div>
 
     </div>
 
-    <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function plusSlides(n) {
-      showSlides2(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides2(slideIndex = n);
-    }
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 6000); // Change image every x seconds
-    }
-
-
-    function showSlides2(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-
-    </script>
   </tal:block>
 </tal:block>
 

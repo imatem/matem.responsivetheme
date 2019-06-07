@@ -5,23 +5,6 @@
 
 @media screen and (max-width: 610px) {
 
-    #portal-logo { 
-        display: inline-block !important;
-        width: 150% !important;
-        height: 150% !important; 
-        padding-left: 10px;
-        *margin-left: 200px !important; 
-        }
-  
-  
-/*    div#logo.cell a#portal-logo img  {
-        *width: auto !important;
-       
-    }
-    div#logo.cell { 
-        *max-width: 500px !important; 
-        }
-*/
      #portal-column-content, #portal-column-one, #portal-column-two { 
         *width: 100% !important;
         }
