@@ -5,7 +5,6 @@
 
   <!-- File System Directory Views registration -->
   <cmf:registerDirectory name="matem_responsivetheme_styles"/>
-  <cmf:registerDirectory name="matem_responsivetheme_images"/>
   <cmf:registerDirectory name="matem_responsivetheme_contact_info"/>
 
 </configure>
