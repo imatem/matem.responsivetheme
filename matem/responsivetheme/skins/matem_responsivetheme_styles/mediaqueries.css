@@ -90,10 +90,6 @@
         margin-left: -99%;
         }
 
-    dl#portal-personaltools {
-        margin-right: 34px;
-        float: right;
-        }
 
     /* move search box to the center and expand its width */
     #portal-searchbox {
@@ -108,10 +104,6 @@
         width: 81%;
         }
     .searchform #searchString { width: 211px; }
-
-    #portal-personaltools {
-       font-size: 70%;
-       }
 
    /* global navigation needs to reconfigure itself to be vertical */
   #portal-globalnav {

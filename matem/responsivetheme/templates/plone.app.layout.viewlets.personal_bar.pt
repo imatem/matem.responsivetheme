@@ -1,20 +1,20 @@
-<div id="portal-personaltools-wrapper"
-     i18n:domain="plone" class="cell position-13 width-3">
+<div id="-----"
+     i18n:domain="plone" class="cell ----- -----">
 
-<h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
+<h5 class="-----" i18n:translate="heading_personal_tools">Personal tools</h5>
 
-<dl class="actionMenu deactivated" id="portal-personaltools"
+<dl class="----- -----" id="-----"
     tal:condition="python:view.user_actions and not view.anonymous">
   <tal:block condition="not: view/anonymous"> <!-- TODO: Can we nest these in a better way? -->
-  <dt class="actionMenuHeader">
+  <dt class="-----">
     <!-- The following a-tag needs to be clicked to dropdown the menu -->
-    <a id="user-name"
+    <a id="-----"
        tal:attributes="href view/homelink_url"
        tal:content="view/user_name">
         John
     </a>
   </dt>
-  <dd class="actionMenuContent">
+  <dd class="-----">
     <ul tal:repeat="action view/user_actions">
         <li tal:attributes="id string:personaltools-${action/id}">
             <a href=""
@@ -29,9 +29,9 @@
   </tal:block>
 </dl>
 
-<dl class="actionMenu deactivated" id="portal-personaltools"
+<dl class="----- -----" id="-----"
     tal:condition="view/anonymous">
-  <dt id="anon-personalbar">
+  <dt id="-----">
     <tal:actions repeat="action view/user_actions">
         <a href=""
            tal:attributes="href action/url"
