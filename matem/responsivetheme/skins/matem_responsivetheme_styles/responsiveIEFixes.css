@@ -1,11 +1,11 @@
 /* css with the asterisk mark is for IE 7 only */
 
-#portal-searchbox { margin-top: 35px !important;}
+/*#portal-searchbox { margin-top: 35px !important;}*/
 
 
 @media screen and (max-width: 610px) {
 
-     #portal-column-content, #portal-column-one, #portal-column-two { 
+     /*#portal-column-content, #portal-column-one, #portal-column-two {
         *width: 100% !important;
         }
         
@@ -22,5 +22,5 @@
         
     .nav-menu .nav-primary.expanded #portal-globalnav li a {
         *min-width: 94%;
-    }
+    }*/
 }
