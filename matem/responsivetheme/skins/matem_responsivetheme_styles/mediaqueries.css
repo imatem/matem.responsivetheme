@@ -173,10 +173,10 @@
         font-size: 2em;
     }
 
-    #searchGadget {
+    /*#searchGadget {
         font-size: 2em;
         padding-left: 10px;
-    }
+    }*/
 
     input.searchPage {
         font-size: 1em !important;
