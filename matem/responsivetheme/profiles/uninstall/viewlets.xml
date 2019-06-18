@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<object>
+  <!-- Sunburst Theme -->
+  <hidden manager="plone.portaltop" skinname="Sunburst Theme" purge="True"/>
+  <hidden manager="plone.portalheader" skinname="Sunburst Theme" purge="True"/>
+  <order manager="plone.portaltop" skinname="Sunburst Theme" purge="True"/>
+  <order manager="plone.portalheader" skinname="Sunburst Theme" purge="True"/>
+</object>
