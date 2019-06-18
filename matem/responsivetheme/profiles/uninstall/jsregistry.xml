@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="portal_javascripts">
+  <javascript id="++resource++matem.responsivetheme.javascripts/respond.src.js" remove="True" />
+  <javascript id="++resource++matem.responsivetheme.javascripts/viewportchange.js" remove="True" />
+  <javascript id="++resource++matem.responsivetheme.javascripts/plone-rwd-nav.js" remove="True" />
+  <javascript id="++resource++matem.responsivetheme.javascripts/ios-orientationchange-fix.js" remove="True" />
+  <javascript id="++resource++matem.responsivetheme.javascripts/jquery.slicebox.min.js" remove="True" />
+</object>
