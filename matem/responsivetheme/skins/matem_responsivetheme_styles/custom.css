@@ -1,0 +1,267 @@
+/* uncomment the below selector to get a fixed-width layout. *
+ * 60em is equivalent to 960px in this case, and every       *
+ * grid cell will be 40px with 10px padding.                 */
+
+/* #visual-portal-wrapper { width: 60em; margin: 0 auto; } */
+
+.collage-column h2 {
+    border-bottom: 1px solid rgb(140,172,187);
+}
+
+.collage_item_3 h2{
+    border-bottom: 0px;
+}
+
+.clickable h2 {
+    border-bottom: 0px;
+    text-align: right;
+    font-size: 1em;
+    font-weight: normal;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+
+.tileItem {
+    border-bottom: 1px dotted #bbb;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+}
+
+.block_2 div.collage_item_1  {
+    margin-bottom: 0px;
+}
+
+
+.section-inicio #portal-header{
+    background-image: url(estrella.png);
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+}
+
+#portal-logo {
+    margin-top: 2.3em;
+}
+
+#portal-logo-unam {
+    float: right;
+    margin: 2.3em 30px;
+}
+
+#portal-top {
+ z-index:20!important
+}
+
+#portal-languageselector{
+right: 20px;
+background: #ffffff;
+}
+
+#title-0d756d97002e47d5a7f4aedaff4b47b2 {
+    border-bottom: 0;
+}
+
+.no_mostrar {
+    display: none;
+}
+.subsection-noticias-leopoldo-roman-cuevas-2016 .newsImageContainer {
+    display: none;
+}
+
+.portaltype-cvfolder .state-private {
+    color: #427597 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:  'Open Sans Condensed', sans-serif;
+    letter-spacing: normal;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+/*  *  900px and below * */
+@media screen and (max-width : 900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+/*  *  600px and below * */
+@media screen and (max-width : 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+.collage_item_2 h2 {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.subsection-otras-actividades-eventos-2018-verjovsky .documentFirstHeading,
+.subsection-otras-actividades-eventos-2018-verjovsky .documentDescription,
+.subsection-otras-actividades-eventos-2018-verjovsky .newsImageContainer{
+    display: none;
+}
+
+.subsection-otras-actividades-eventos-2018-verjovsky #content {
+    font-size: 16px;
+}
+
+.subsection-otras-actividades-eventos-2018-verjovsky h1{
+    font-size: 4em;
+}
+
+.subsection-otras-actividades-eventos-2018-verjovsky .place {
+    font-size: 2em;
+}
+
+
+/*!-- Para la página de votaciones*/
+
+
+@media screen and (max-width : 900px) {
+  .track-progress {
+    font-size: 10px;
+  }
+}
+
+.track-progress[data-steps="3"] li { width: 25%; }
+.track-progress[data-steps="4"] li { width: 23%; }
+.track-progress[data-steps="5"] li { width: 20%; }
+
+.track-progress {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.track-progress li {
+  list-style-type: none;
+  display: inline-block !important;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 30px !important;
+  background-color: rgb(197,203,233);
+}
+
+.track-progress li > span {
+  display: block;
+  color: #757575;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.track-progress li.done > span {
+  color: white;
+  background-color: #3F51B5;
+  border-color: #3F51B5;
+}
+
+.track-progress li > span:after,
+.track-progress li > span:before {
+  content: "" !important;
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid transparent;
+  border-left-color: rgb(197,203,233);
+  border-width: 15px;
+  margin-left: -8px;
+}
+
+.track-progress li > span:after {
+  top: -5px;
+  z-index: 1;
+  border-left-color: white;
+  border-width: 20px;
+}
+
+.track-progress li > span:before {
+  z-index: 2;
+}
+
+.track-progress li.done + li > span:before {
+  border-left-color: #3F51B5;
+}
+
+.track-progress li:first-child > span:after,
+.track-progress li:first-child > span:before {
+  display: none;
+}
+
+.track-progress li:first-child i,
+.track-progress li:last-child i {
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid transparent;
+  border-left-color: white;
+  border-width: 15px;
+}
+
+.track-progress li:last-child i {
+  left: auto;
+  right: -15px !important;
+
+  border-left-color: transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+.cadidatos-wrapper{
+  display: table;
+  border-spacing: 20px 0;
+}
+
+.candidato{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table-row;
+}
+
+.candidato li {
+  display: table-cell !important;
+  vertical-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.subsection-proyectos-cisic-2018 #content{
+   font-size: 100%;
+}
+
+#pfg-fieldsetname-problemas-nacionales br {
+ display: none;
+}
+
+.subsection-proyectos-cisic-2018 input {
+    margin-left: 15px;
+}
+
+.subsection-servicios-internos-consejo-interno-orden-del-dia #content .documentDescription {
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.subsection-servicios-internos-consejo-interno-orden-del-dia .description {
+    display: none;
+}
