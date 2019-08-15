@@ -10,12 +10,5 @@
   <include file="skins.zcml" />
   <include file="profiles.zcml" />
   <i18n:registerTranslations directory="locales" />
-  
-    <!-- Use jbot for template overrides -->
-    <include package="z3c.jbot" file="meta.zcml" />
-
-    <browser:jbot
-        directory="templates"
-        layer=".browser.interfaces.IResponsiveTheme" />
 
 </configure>

@@ -28,14 +28,6 @@
         class=".views.ContactInfoIM"
     />
 
-    <browser:page
-        for="*"
-        name="muchas-gracias"
-        template="restadapter.pt"
-        permission="zope2.View"
-        class=".restadapter.PFGrestView"
-    />
-
     <!-- allowed_interface=".interfaces.IPlone" -->
     <browser:page
       for="*"

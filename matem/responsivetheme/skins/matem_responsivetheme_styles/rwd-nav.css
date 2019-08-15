@@ -2,22 +2,22 @@
 ------------------------------ */
 
 
-.nav-primary .navigation-pulldown {
+/*.nav-primary .navigation-pulldown {
    font-weight: bold;
-}
+}*/
 
 /* drop down menu formatting when all menu items won't fit in a single line */
-.nav-menu .nav-primary {
+/*.nav-menu .nav-primary {
    margin: 45px 0em 0em;
    position: relative;
    overflow: hidden;
    clear: both;
-}
+}*/
 
 
 
 /* arrow down */
-.nav-menu .nav-primary span.nav-section {
+/*.nav-menu .nav-primary span.nav-section {
    position: absolute;
    top: 0.8em;
    left: auto;
@@ -26,9 +26,9 @@
    width: 4em;
    height: 4.5em; 
    cursor: pointer;
-}
+}*/
 
-.nav-menu .nav-primary li {
+/*.nav-menu .nav-primary li {
    clear: left;
    display: none !important;
 }    
@@ -41,10 +41,10 @@
 }
 .nav-menu .nav-primary.expanded li.navigation-pulldown {
    border-bottom-width: 1px;
-}
+}*/
 
 /*     background-color: #2586D9; */
-button.navigation-button {
+/*button.navigation-button {
     width: 98%; 
     font-size: 1.5em; 
     border: 1px solid #062946;
@@ -72,28 +72,6 @@ div.expanded button.navigation-button {
     border-bottom-right-radius: 0px; 
       
 }
-
-
-.nav-menu .nav-primary #portal-globalnav li:last-child, .nav-menu .nav-primary #portal-globalnav li:last-child a {
-    -webkit-border-bottom-right-radius: 9px;
-    -webkit-border-bottom-left-radius: 9px;
-    -moz-border-radius-bottomright: 9px;
-    -moz-border-radius-bottomleft: 9px;
-    border-bottom-right-radius: 9px;
-    border-bottom-left-radius: 9px;    
-}
-
-
-    
-.nav-primary li a:hover {
-    width: auto !important;
-}
-
-.nav-menu .nav-primary.expanded #portal-globalnav li {
-    display: list-item !important;
-    background-color: #062946;
-    width: 98%;
-    margin: 0 1% !important;
-    }
+*/
 
 

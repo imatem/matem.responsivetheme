@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <layers>
-    <layer name="matem.responsivetheme"
-        interface="matem.responsivetheme.browser.interfaces.IResponsiveTheme" />
+  <layer
+    name="matem.responsivetheme"
+    interface="matem.responsivetheme.browser.interfaces.IResponsiveTheme" />
 </layers>
